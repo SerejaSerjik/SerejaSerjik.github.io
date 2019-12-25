@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>gulp-scss-starter</title>
-        <meta name="theme-color" content="#fff">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="../img/favicons/favicon-16x16.png" type="image/png">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="../img/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- <link rel="icon" sizes="16x16" href="../img/favicons/favicon-16x16.png" type="image/png">
         <link rel="icon" sizes="32x32" href="../img/favicons/favicon-32x32.png" type="image/png">
         <link rel="apple-touch-icon-precomposed" href="../img/favicons/apple-touch-icon-precomposed.png">
         <link rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png">
@@ -22,12 +32,16 @@
         <link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-touch-icon-152x152.png">
         <link rel="apple-touch-icon" sizes="167x167" href="../img/favicons/apple-touch-icon-167x167.png">
         <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="../img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="../styles/main.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Tenor+Sans&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header class="header">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="../img/favicons/apple-touch-icon-1024x1024.png"> -->
+    <link rel="stylesheet" href="../styles/main.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.min.css" />
+  </head>
+  <body>
+    <header class="header">
   <ul class="header__items">
     <li class="header__item header__link header__link-active">
       <a href="/products">Produits</a>
@@ -68,13 +82,274 @@
   </ul>
 </header>
 
-        <main class="container">
-            <section class="banner-block">
-                <div class="banner-block__left-item"></div>
-                <div class="banner-block__right-item"></div>
-            </section>
-        </main>
-        <footer class="footer">
+    <main class="container">
+      <section class="banner-block">
+  <div class="banner-block__item banner-block__left-item">
+    <div class="banner-block__circle"><span class="banner-block__circle-text">Huile<br>
+      essentielle<br>
+      d’Immortelle</span></div>
+    <div class="banner-block__circle"><span class="banner-block__circle-text">90.7%<br>
+      d'Ingrédients<br> Biologiques</span></div>
+  </div>
+  <div class="banner-block__item banner-block__right-item">
+    <div class="banner-block__text">
+      <h1 class="banner-block__text-header">Elixir d'huiles précieuses à l'Immortelle</h1>
+      <h4 class="banner-block__text-subheader">UN SÉRUM ANTI-ÂGE 100% NATUREL</h4>
+    </div>
+  </div>
+</section>
+      <div class="inner-container">
+        <section class="products-slider">
+  <h2 class="products-slider__header">Savons</h2>
+  <div class="products-slider__slider-body">
+    <div class="swiper-container swiper1">
+      <div class="swiper-wrapper">
+        <!-- SAVONS -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <img
+              src="../../../img/products/sl-lavande-500-ml.png"
+              class="product-card__image"
+            />
+            <span class="product-card__title"
+              >Savon liquide de Marseille huile d'Olive Bio / Lavande
+              500ml</span
+            >
+            <span class="product-card__price">13,00 €</span>
+            <a href="" class="product-card__button">AJOUTER AU PANIER</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-card">
+            <img
+              src="../../../img/products/sl-karite-500-ml.png"
+              class="product-card__image"
+            />
+            <span class="product-card__title"
+              >Savon liquide de Marseille Beurre de karité / Verveine Tropicale
+              500ml</span
+            >
+            <span class="product-card__price">13,00 €</span>
+            <a href="" class="product-card__button">AJOUTER AU PANIER</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-card">
+            <img
+              src="../../../img/products/sl-olive-330-ml.png"
+              class="product-card__image"
+            />
+            <span class="product-card__title"
+              >Savon de Marseille huile d'Olive Bio 330ml</span
+            >
+            <span class="product-card__price">9,80 €</span>
+            <a href="" class="product-card__button">AJOUTER AU PANIER</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-prev swiper-button-prev1"></div>
+    <div class="swiper-button-next swiper-button-next1"></div>
+    <div class="swiper-pagination swiper-pagination1"></div>
+  </div>
+</section>
+
+        <section class="banner-block2">
+  <div class="banner-block2__item banner-block2__left-item"></div>
+  <div class="banner-block2__item banner-block2__right-item">
+    <div class="banner-block2__text">
+      <h1 class="banner-block2__text-header">
+        nos engagements
+      </h1>
+      <p class="banner-block2__text-p">
+        La Savonnerie du Pilon du Roy a été créée en 2002 à Mimet, petit village
+        où l’art de vivre est une vraie philosophie. Aujourd’hui implantée à la
+        Ciotat, terre d’inspiration bordée par la Méditerranée, nous créons
+        différentes gammes en utilisant des matières premières provençales et
+        plus largement méditerranéennes.
+      </p>
+      <h4 class="banner-block2__text-subheader">EN SAVOIR PLUS</h4>
+    </div>
+  </div>
+</section>
+
+        <section class="products-slider">
+  <h2 class="products-slider__header">SOINS DE LA MAISON</h2>
+  <div class="products-slider__slider-body">
+    <div class="swiper-container swiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="product-card">
+            <img
+              src="../../../img/products/savon-noir-tradition-1-l.png"
+              class="product-card__image"
+            />
+            <span class="product-card__title"
+              >Savon noir ménager pur Olive - 1L</span
+            >
+            <span class="product-card__price">11,50 €</span>
+            <a href="" class="product-card__button">AJOUTER AU PANIER</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-card">
+            <img
+              src="../../../img/products/liquide-vaisselle-500-ml.png"
+              class="product-card__image"
+            />
+            <span class="product-card__title"
+              >Liquide vaisselle au Tea Tree - 500ml</span
+            >
+            <span class="product-card__price">7,50 €</span>
+            <a href="" class="product-card__button">AJOUTER AU PANIER</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-card">
+            <img
+              src="../../../img/products/liquide-vaisselle-1-l.png"
+              class="product-card__image"
+            />
+            <span class="product-card__title"
+              >Liquide vaisselle au Tea Tree - 1L</span
+            >
+            <span class="product-card__price">12,25 €</span>
+            <a href="" class="product-card__button">AJOUTER AU PANIER</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-prev swiper-button-prev2"></div>
+    <div class="swiper-button-next swiper-button-next2"></div>
+    <div class="swiper-pagination swiper-pagination2"></div>
+  </div>
+</section>
+
+        <section class="two-products-banner">
+  <div class="two-products-banner__product-image"><img src="../../../img/bg-images/banner-savons.png" alt=""></div>
+  <div class="two-products-banner__product-image"><img src="../../../img/bg-images/banner-oils.png" alt=""></div>
+</section>
+        <section class="products-slider">
+  <h2 class="products-slider__header">Savons</h2>
+  <div class="products-slider__slider-body">
+    <div class="swiper-container swiper3">
+      <div class="swiper-wrapper">
+        <!-- SAVONS -->
+        <div class="swiper-slide">
+          <div class="product-card">
+            <img
+              src="../../../img/products/et-rose.png"
+              class="product-card__image"
+            />
+            <span class="product-card__title"
+              >Eau de toilette Rose de Mai - 100ml</span
+            >
+            <span class="product-card__price">16,00 €</span>
+            <a href="" class="product-card__button">AJOUTER AU PANIER</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-card">
+            <img
+              src="../../../img/products/et-bouquet-agrumese.png"
+              class="product-card__image"
+            />
+            <span class="product-card__title"
+              >Eau de toilette Bouquet d'Agrumes - 100ml</span
+            >
+            <span class="product-card__price">16,00 €</span>
+            <a href="" class="product-card__button">AJOUTER AU PANIER</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-card">
+            <img
+              src="../../../img/products/et-patchouli.png"
+              class="product-card__image"
+            />
+            <span class="product-card__title"
+              >Eau de toilette Patchouli - 100ml</span
+            >
+            <span class="product-card__price">16,00 €</span>
+            <a href="" class="product-card__button">AJOUTER AU PANIER</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-prev swiper-button-prev3"></div>
+    <div class="swiper-button-next swiper-button-next3"></div>
+    <div class="swiper-pagination swiper-pagination3"></div>
+  </div>
+</section>
+
+        <section class="advantages">
+  <div class="advantages-item">
+    <div class="advantages-item__image">
+      <img src="../../../img/svg/icon-dove.svg" />
+    </div>
+    <h5 class="advantages-item__title">ACHAT<br />SOLIDAIRE</h5>
+    <span class="advantages-item__text"
+      >1 commande =<br />
+      1€ reversé<br />
+      à Fraternité Bénin</span
+    >
+  </div>
+  <div class="advantages-item">
+    <div class="advantages-item__image">
+      <img src="../../../img/svg/icon-leaf.svg" />
+    </div>
+    <h5 class="advantages-item__title">
+      COSMÉTIQUES<br />
+      NATURELS
+    </h5>
+    <span class="advantages-item__text"
+      >entre 95% et 100%<br />
+      d’ingrédients<br />
+      d’origine naturelle</span
+    >
+  </div>
+  <div class="advantages-item">
+    <div class="advantages-item__image">
+      <img src="../../../img/svg/icon-shield.svg" />
+    </div>
+    <h5 class="advantages-item__title">PAIEMENT<br />SÉCURISÉ</h5>
+    <span class="advantages-item__text"
+      >par BNP Paribas<br />
+      & Paypal</span
+    >
+  </div>
+  <div class="advantages-item">
+    <div class="advantages-item__image">
+      <img src="../../../img/svg/icon-truck.svg" />
+    </div>
+    <h5 class="advantages-item__title">
+      LIVRAISON<br />
+      EN 48H
+    </h5>
+    <span class="advantages-item__text"
+      >Livraison en<br />
+      France offerte dès<br />
+      50€ d'achat</span
+    >
+  </div>
+  <div class="advantages-item">
+    <div class="advantages-item__image">
+      <img src="../../../img/svg/icon-planet.svg" />
+    </div>
+    <h5 class="advantages-item__title">
+      DÉVELOPPEMENT<br />
+      DURABLE
+    </h5>
+    <span class="advantages-item__text"
+      >Protection de<br />
+      l'environnement</span
+    >
+  </div>
+</section>
+
+      </div>
+    </main>
+    <footer class="footer">
   <div class="footer__top-part">
     <div class="footer__logo">
       <a href="/">
@@ -101,18 +376,18 @@
     <div class="footer__social-links">
       <a href="/"
         ><img
-          src="../../../img/icon-instagram-small.png"
+          src="../../../img/icon-instagram.png"
           srcset="
-            ../../../img/icon-instagram-small@2x.png 2x,
-            ../../../img/icon-instagram-small@3x.png 3x
+            ../../../img/icon-instagram@2x.png 2x,
+            ../../../img/icon-instagram@3x.png 3x
           "
       /></a>
       <a href="/"
         ><img
-          src="../../../img/icon-fb-sall.png"
+          src="../../../img/icon-fb.png"
           srcset="
-            ../../../img/icon-fb-sall@2x.png 2x,
-            ../../../img/icon-fb-sall@3x.png 3x
+            ../../../img/icon-fb@2x.png 2x,
+            ../../../img/icon-fb@3x.png 3x
           "
         />
       </a>
@@ -132,7 +407,81 @@
   </div>
 </footer>
 
-        <script src="../js/main.min.js"></script>
-        <script src="../js/vendor.min.js"></script>
-    </body>
+    <script src="https://unpkg.com/swiper/js/swiper.min.min.js"></script>
+    <script>
+      let slidesPerSlideCount = 1;
+
+      if (window.innerWidth <= 375) {
+        slidesPerSlideCount = 1;
+      } else if (window.innerWidth > 375 && window.innerWidth <= 768) {
+        slidesPerSlideCount = 2
+      } else {
+        slidesPerSlideCount = 3
+      }
+
+      // function toggleSlidesCount() {
+      //   if (window.innerWidth <= 375) {
+      //     slidesPerSlideCount = 1;
+      //   } else if (window.innerWidth > 375 && window.innerWidth <= 768) {
+      //     slidesPerSlideCount = 2
+      //   } else {
+      //     slidesPerSlideCount = 3
+      //   }
+      //   console.log(slidesPerSlideCount)
+      // }
+
+      // window.addEventListener("resize", toggleSlidesCount);
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var swiper1 = new Swiper(".swiper1", {
+          loop: true,
+          slidesPerView: slidesPerSlideCount,
+
+          pagination: {
+            el: ".swiper-pagination1",
+            clickable: true
+          },
+
+          navigation: {
+            nextEl: ".swiper-button-next1",
+            prevEl: ".swiper-button-prev1"
+          },
+          debugger: true,
+        });
+
+        var swiper2 = new Swiper(".swiper2", {
+          loop: true,
+          slidesPerView: slidesPerSlideCount,
+
+          pagination: {
+            el: ".swiper-pagination2",
+            clickable: true
+          },
+
+          navigation: {
+            nextEl: ".swiper-button-next2",
+            prevEl: ".swiper-button-prev2"
+          },
+          debugger: true,
+        });
+
+        var swiper3 = new Swiper(".swiper3", {
+          loop: true,
+          slidesPerView: slidesPerSlideCount,
+
+          pagination: {
+            el: ".swiper-pagination3",
+            clickable: true
+          },
+
+          navigation: {
+            nextEl: ".swiper-button-next3",
+            prevEl: ".swiper-button-prev3"
+          },
+          debugger: true,
+        });
+      });
+    </script>
+    <script src="../js/main.min.js"></script>
+  </body>
 </html>
