@@ -13,6 +13,120 @@
     <body>
         <header class="header">
   <ul class="header__items">
+    <li class="header__item header__burger">
+      <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <div id="menu">
+            <ul class="burger-menu">
+              <li class="burger-menu__item">
+                <span class="burger-menu__item-title item-expanded"><a href="/">Produits</a>
+                  <span class="item-expanded__button">+</span>
+                </span>
+                <ul class="item-expanded__list">
+                  <a href="/s">
+                    <li class="burger-menu__subitem">
+                      <img class="burger-menu__subitem-icon"
+                        src="/img/products-small/produits-savon-liquides.svg" /><span
+                        class="burger-menu__subitem-title">Savons Liquides de Marseille</span>
+                    </li>
+                  </a>
+                  <a href="/s">
+                    <li class="burger-menu__subitem">
+                      <img class="burger-menu__subitem-icon" src="/img/products-small/produits-savons.svg" /><span
+                        class="burger-menu__subitem-title">Savons Végétaux</span>
+                    </li>
+                  </a>
+                  <a href="/s">
+                    <li class="burger-menu__subitem">
+                      <img class="burger-menu__subitem-icon" src="/img/products-small/produits-shampoings.svg" /><span
+                        class="burger-menu__subitem-title">Shampoings-douche et Après-shampoings</span>
+                    </li>
+                  </a>
+                  <a href="/s">
+                    <li class="burger-menu__subitem">
+                      <img class="burger-menu__subitem-icon" src="/img/products-small/produits-eaux.svg" />
+                      <span class="burger-menu__subitem-title">Eaux de Toilette</span>
+                    </li>
+                  </a>
+                  <a href="/s">
+                    <li class="burger-menu__subitem">
+                      <img class="burger-menu__subitem-icon" src="/img/products-small/produits-meson.svg" /><span
+                        class="burger-menu__subitem-title">Soins de la Maison</span>
+                    </li>
+                  </a>
+                </ul>
+              </li>
+              </a>
+
+              <li class="burger-menu__item">
+                <span class="burger-menu__item-title item-expanded"><a href="/">Nos Gammes</a>
+                  <span class="item-expanded__button">+</span>
+                </span>
+                <ul class="item-expanded__list">
+                  <a href="/a">
+                    <li class="burger-menu__subitem">
+                      <img class="burger-menu__subitem-icon" src="/img/products-small/gammes-argan.png" />
+                      <span class="burger-menu__subitem-title">ARGAN</span>
+                    </li>
+                  </a>
+                  <a href="/a">
+                    <li class="burger-menu__subitem">
+                      <img class="burger-menu__subitem-icon" src="/img/products-small/gammes-anesse.svg" />
+                      <span class="burger-menu__subitem-title">LAIT D'ÂNESSE</span>
+                    </li>
+                  </a>
+                  <a href="/a">
+                    <li class="burger-menu__subitem">
+                      <img class="burger-menu__subitem-icon" src="/img/products-small/gammes-lavande.png" />
+                      <span class="burger-menu__subitem-title">LAVANDE</span>
+                    </li>
+                  </a>
+                  <a href="/a">
+                    <li class="burger-menu__subitem">
+                      <img class="burger-menu__subitem-icon" src="/img/products-small/games-karite.png" /><span
+                        class="burger-menu__subitem-title">Beurre de Karité</span>
+                    </li>
+                  </a>
+                </ul>
+              </li>
+              <a href="/">
+                <li class="burger-menu__item">
+                  <span class="burger-menu__item-title">Nos engagements </span>
+                </li>
+              </a>
+              <a href="/">
+                <li class="burger-menu__item">
+                  <span class="burger-menu__item-title">Points De Vente</span>
+                </li>
+              </a>
+              <a href="/">
+                <li class="burger-menu__item last-item">
+                  <span class="burger-menu__item-title">Contactez-nous</span>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </li>
     <li class="header__item header__link header__link-active">
       <a href="/products">Produits</a>
     </li>
@@ -23,13 +137,8 @@
       <a href="/nos_engagements">Nos Engagements</a>
     </li>
     <li class="header__item header__logo">
-      <a href="/"
-        ><img
-          src="../../../img/logo.png"
-          srcset="../../../img/logo@2x.png 2x, ../../../img/logo@3x.png 3x"
-          class="logo"
-          alt="La Savonnerie Du Pilon Du Roy"
-      /></a>
+      <a href="/"><img src="/img/logo.png" srcset="/img/logo@2x.png 2x, /img/logo@3x.png 3x" class="logo"
+          alt="La Savonnerie Du Pilon Du Roy" /></a>
     </li>
     <li class="header__item header__link">
       <a href="/points_de_vente">Points De Vente</a>
@@ -39,29 +148,25 @@
     </li>
     <li class="header__item header__icons">
       <i class="header__icon">
-        <img src="../../../img/svg/icon-search.svg" alt="" />
+        <img src="/img/svg/icon-search.svg" alt="" />
       </i>
-      <i class="header__icon"
-        ><img src="../../../img/svg/icon-profile.svg" alt=""
-      /></i>
-      <i class="header__icon"
-        ><img src="../../../img/svg/icon-cart.svg" alt="" />
+      <i class="header__icon"><img src="/img/svg/icon-profile.svg" alt="" /></i>
+      <i class="header__icon"><img src="/img/svg/icon-cart.svg" alt="" />
         <span class="cart-items-count">2</span>
       </i>
     </li>
   </ul>
 </header>
-
         <h1>New Page</h1>
         <footer class="footer">
   <div class="footer__top-part">
     <div class="footer__logo">
       <a href="/">
         <img
-          src="../../../img/logo-white.png"
+          src="/img/logo-white.png"
           srcset="
-            ../../../img/logo-white@2x.png 2x,
-            ../../../img/logo-white@3x.png 3x
+            /img/logo-white@2x.png 2x,
+            /img/logo-white@3x.png 3x
           "
           class="logo"
           alt="La Savonnerie Du Pilon Du Roy"
@@ -80,27 +185,27 @@
     <div class="footer__social-links">
       <a href="/"
         ><img
-          src="../../../img/icon-instagram.png"
+          src="/img/icon-instagram.png"
           srcset="
-            ../../../img/icon-instagram@2x.png 2x,
-            ../../../img/icon-instagram@3x.png 3x
+            /img/icon-instagram@2x.png 2x,
+            /img/icon-instagram@3x.png 3x
           "
       /></a>
       <a href="/"
         ><img
-          src="../../../img/icon-fb.png"
+          src="/img/icon-fb.png"
           srcset="
-            ../../../img/icon-fb@2x.png 2x,
-            ../../../img/icon-fb@3x.png 3x
+            /img/icon-fb@2x.png 2x,
+            /img/icon-fb@3x.png 3x
           "
         />
       </a>
       <a href="/"
         ><img
-          src="../../../img/icon-youtube.png"
+          src="/img/icon-youtube.png"
           srcset="
-            ../../../img/icon-youtube@2x.png 2x,
-            ../../../img/icon-youtube@3x.png 3x
+            /img/icon-youtube@2x.png 2x,
+            /img/icon-youtube@3x.png 3x
           "
       /></a>
     </div>
