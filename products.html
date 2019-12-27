@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Main Page</title>
+  <title>Products Page</title>
   <meta name="theme-color" content="#fff" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-  <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="./styles/main.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Tenor+Sans&display=swap" rel="stylesheet" />
 </head>
@@ -131,7 +131,7 @@
         </div>
       </nav>
     </li>
-    <li class="header__item header__link">
+    <li class="header__item header__link header__link-active">
       <a href="/products.html">Produits</a>
     </li>
     <li class="header__item header__link">
@@ -161,23 +161,30 @@
     </li>
   </ul>
 </header>
-  <main class="container">
-    <section class="banner-block">
-  <div class="banner-block__item banner-block__left-item">
-    <div class="banner-block__circle"><span class="banner-block__circle-text">Huile<br>
-      essentielle<br>
-      d’Immortelle</span></div>
-    <div class="banner-block__circle"><span class="banner-block__circle-text">90.7%<br>
-      d'Ingrédients<br> Biologiques</span></div>
-  </div>
-  <div class="banner-block__item banner-block__right-item">
-    <div class="banner-block__text">
-      <h1 class="banner-block__text-header">Elixir d'huiles précieuses à l'Immortelle</h1>
-      <h4 class="banner-block__text-subheader">UN SÉRUM ANTI-ÂGE 100% NATUREL</h4>
-    </div>
+    <section class="products-banner">
+  <h1 class="products-banner__title">Produits</h1>
+  <p class="products-banner__desc">Découvrez l'ensemble de nos gammes de savons et cosmétiques d'origine naturelle.
+    Fabriquées au coeur de la Provence, nous mettons tout notre savoir-faire pour vous proposer des produits qui gardent
+    toutes les vertus que nous offre la Nature.</p>
+  <div class="products-banner__items-grid">
+    <a href="/" class="products-banner__item-link">
+      <img src="./img/products-small/produits-savon-liquides.svg" alt="" class="products-banner__item-img">
+        <span class="products-banner__item-title">Savons Liquides de Marseille</span></a>
+    <a href="/" class="products-banner__item-link">
+      <img src="./img/products-small/produits-savons.svg" alt="" class="products-banner__item-img">
+        <span class="products-banner__item-title">Savons Végétaux</span></a>
+    <a href="/shampoo.html" class="products-banner__item-link">
+      <img src="./img/products-small/produits-shampoings.svg" alt="" class="products-banner__item-img">
+        <span class="products-banner__item-title">Shampoings-douche et Après-shampoings</span></a>
+    <a href="/" class="products-banner__item-link">
+      <img src="./img/products-small/produits-eaux.svg" alt="" class="products-banner__item-img">
+        <span class="products-banner__item-title">Eaux de Toilette</span></a>
+    <a href="/" class="products-banner__item-link">
+      <img src="./img/products-small/produits-meson.svg" alt="" class="products-banner__item-img">
+        <span class="products-banner__item-title">Soins de la Maison</span></a>
   </div>
 </section>
-    <div class="inner-container">
+    <main class="container">
       <section class="products-slider">
   <h2 class="products-slider__header">Savons</h2>
   <div class="products-slider__slider-body">
@@ -426,8 +433,7 @@
   </div>
 </section>
 
-    </div>
-  </main>
+    </main>
   <footer class="footer">
   <div class="footer__top-part">
     <div class="footer__logo">
@@ -489,19 +495,6 @@
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="./js/main.min.js"></script>
   <script>
-    // function toggleSlidesCount() {
-    //   if (window.innerWidth <= 375) {
-    //     slidesPerSlideCount = 1;
-    //   } else if (window.innerWidth > 375 && window.innerWidth <= 768) {
-    //     slidesPerSlideCount = 2
-    //   } else {
-    //     slidesPerSlideCount = 3
-    //   }
-    //   console.log(slidesPerSlideCount)
-    // }
-
-    // window.addEventListener("resize", toggleSlidesCount);
-
     document.addEventListener("DOMContentLoaded", function () {
       let slidesPerSlideCount = 1;
 
